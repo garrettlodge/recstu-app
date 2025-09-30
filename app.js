@@ -11,7 +11,8 @@ const firebaseConfig = {
   // console's “SDK setup and configuration” section for these values.  The
   // apiKey is not a secret, but it identifies your project and must
   // exactly match the value in your Firebase settings.
-  apiKey: "AIzaSyBxjd8D6LmNcxiHWU2U6aXGdcjAYeY83wk",
+  // Updated apiKey to match the Firebase project's Web API key exactly.
+  apiKey: "AIzaSyBxjd8D6LmNcxjHWU2U6aXGdcjAYeY83wk",
   authDomain: "recstu-4-u.firebaseapp.com",
   projectId: "recstu-4-u",
   // Note: Firebase Storage uses the `.app` domain, not `appspot.com`,
