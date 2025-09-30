@@ -1,16 +1,19 @@
-.<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RecStu – Client Tracker and Social Feed</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Firebase SDKs loaded from the official CDN.  -->
+    <!-- Firebase SDKs loaded from the official CDN. Use the *compat* builds
+         so the namespaced APIs (firebase.auth(), firebase.firestore(), etc.)
+         used in app.js are available. -->
     <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
-
-    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-storage-compat."></script
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-storage-compat.js"></script>
+    <!-- Load our application code after the Firebase SDKs. We keep defer so the script
+         runs after the HTML is parsed. -->
     <script defer src="app.js"></script>
   </head>
   <body>
